@@ -4,12 +4,8 @@ import Vue from "vue";
 // 引入vue-router
 import VueRouter from "vue-router";
 // 引入组件
-import Index from "@/pages/index.vue";
-import login from "@/pages/login.vue";
-import son from "@/components/son.vue";
-import forgetpassword from "@/components/forgetpassword.vue";
-import register from "@/components/register.vue";
-
+import Index from "@/view/index/index.vue";
+import login from "@/view/login/login.vue";
 // use 路由管理
 Vue.use(VueRouter);
 // 创建路由对象 实现映射
@@ -24,34 +20,28 @@ export default new VueRouter({
     {
       name: "Index",
       path: "/index",
-      component: () => import("@/pages/index"),
-      children: [
-        {
-          name: "a",
-          path: "a",
-          component: () => import("@/components/a.vue")
-        }
-      ]
-    },
-    {
-      name: "son",
-      path: "/son",
-      component: son
-    },
-    {
-      name: "forgetpassword",
-      path: "/forgetpassword",
-      component: forgetpassword
-    },
-    {
-      name: "register",
-      path: "/register",
-      component: register
+      component: () => import("@/view/index/index.vue"),
+      children: []
     },
     {
       name: "login",
       path: "/login",
-      component: login
+      component: () => import("@/view/login/login.vue")
+    },
+    {
+      name: "forgetpassword",
+      path: "/forgetpassword",
+      component: () => import("@/components/forgetpassword.vue")
+    },
+    {
+      name: "register",
+      path: "/register",
+      component: () => import("@/components/register.vue")
+    },
+    {
+      name: "orderpage",
+      path: "/orderpage",
+      component: () => import("@/components/orderpage.vue")
     }
   ]
 });

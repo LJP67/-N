@@ -3,7 +3,7 @@
     class="rou"
     style="margin: 80px auto; width: 25%; border: 1px solid #cccc"
   >
-    <h1 style="display: initial; margin-left: 34%">管理系统</h1>
+    <h1 style="display: initial; margin-left: 34%">美团登录</h1>
     <el-form :model="loginForm" ref="form" :rules="rules" class="form">
       <el-form-item class="form-item" prop="username">
         <el-input

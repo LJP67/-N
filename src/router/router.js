@@ -4,8 +4,6 @@ import Vue from "vue";
 // 引入vue-router
 import VueRouter from "vue-router";
 // 引入组件
-import Index from "@/view/index/index.vue";
-import login from "@/view/login/login.vue";
 // use 路由管理
 Vue.use(VueRouter);
 // 创建路由对象 实现映射
@@ -21,6 +19,24 @@ export default new VueRouter({
       name: "Index",
       path: "/index",
       component: () => import("@/view/index/index.vue"),
+      children: []
+    },
+    {
+      name: "order",
+      path: "/order",
+      component: () => import("@/view/index/order.vue"),
+      children: []
+    },
+    {
+      name: "information",
+      path: "/information",
+      component: () => import("@/view/index/information.vue"),
+      children: []
+    },
+    {
+      name: "home",
+      path: "/home",
+      component: () => import("@/view/index/home.vue"),
       children: []
     },
     {
@@ -42,6 +58,16 @@ export default new VueRouter({
       name: "orderpage",
       path: "/orderpage",
       component: () => import("@/components/orderpage.vue")
+    },
+    {
+      name: "bottom",
+      path: "/bottom",
+      component: () => import("@/components/bottom.vue")
+    },
+    {
+      name: "location",
+      path: "/location",
+      component: () => import("@/view/location/location.vue")
     }
   ]
 });

@@ -1,5 +1,6 @@
 <template>
   <div class="orderpage">
+    <!-- 头部 -->
     <div class="headtab">
       <div class="headA">
         <router-link to="/location" tag="li">
@@ -31,7 +32,27 @@
         </span>
       </div>
     </div>
-
+    <!-- 栏目 -->
+    <div class="column">
+      <ul>
+        <li>
+          <i class="iconfont">&#xe661;</i>
+          <span>扫一扫</span>
+        </li>
+        <li>
+          <i class="iconfont">&#xe618;</i>
+          <span>付款码</span>
+        </li>
+        <li>
+          <i class="iconfont">&#xe61f;</i>
+          <span style="margin-left: 37%">骑车</span>
+        </li>
+        <li>
+          <i class="iconfont">&#xe64b;</i>
+          <span>实时公交</span>
+        </li>
+      </ul>
+    </div>
     <div class="statusreport" v-show="statusreport">
       <ul>
         <li>
@@ -98,9 +119,10 @@ export default {
   margin-left: -10%;
 }
 
-/deep/ .newfo input {
+/deep/ .newfo {
   width: 59vw !important;
   height: 4vh !important;
+  padding: 0 !important;
 }
 
 .statusreport {
@@ -118,5 +140,26 @@ export default {
   align-content: center; /*垂直居中*/
   color: #fff;
   line-height: 2.23rem;
+}
+.column {
+  margin-top: 2%;
+}
+.column ul {
+  width: 100%;
+  display: flex; /*设置为flex布局*/
+}
+.column ul li {
+  flex: 1;
+  margin-bottom: 2%;
+}
+.column i {
+  margin-left: 32%;
+  font-size: 2rem;
+}
+.column span {
+  display: block;
+  margin-left: 24%;
+  margin-top: 5%;
+  font-size: 1rem;
 }
 </style>

@@ -60,6 +60,11 @@ export default new VueRouter({
       component: () => import("@/components/orderpage.vue")
     },
     {
+      name: "classify",
+      path: "/classify",
+      component: () => import("@/components/classify.vue")
+    },
+    {
       name: "bottom",
       path: "/bottom",
       component: () => import("@/components/bottom.vue")

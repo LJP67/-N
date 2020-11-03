@@ -65,6 +65,11 @@ export default new VueRouter({
       component: () => import("@/components/classify.vue")
     },
     {
+      name: "findtabs",
+      path: "/findtabs",
+      component: () => import("@/components/findtabs.vue")
+    },
+    {
       name: "bottom",
       path: "/bottom",
       component: () => import("@/components/bottom.vue")
@@ -73,6 +78,21 @@ export default new VueRouter({
       name: "location",
       path: "/location",
       component: () => import("@/view/location/location.vue")
+    },
+    {
+      name: "tabs0",
+      path: "/tabs0",
+      component: () => import("@/view/findtabs/tabs0.vue")
+    },
+    {
+      name: "tabs1",
+      path: "/tabs1",
+      component: () => import("@/view/findtabs/tabs1.vue")
+    },
+    {
+      name: "tabs2",
+      path: "/tabs2",
+      component: () => import("@/view/findtabs/tabs2.vue")
     }
   ]
 });

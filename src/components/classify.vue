@@ -101,12 +101,14 @@ export default {
 </script>
 
 <style  lang="less" scoped>
+.classify {
+  background-color: #f3f3f3;
+}
 .my-swipe .van-swipe-item {
   font-size: 20px;
-  height: 16vh;
+  height: 25vh;
   line-height: 16vh;
   text-align: center;
-  background-color: antiquewhite;
 }
 .programa {
   width: 100%;
@@ -122,8 +124,8 @@ export default {
   flex-direction: column;
   align-content: center;
   line-height: 0.75;
-  word-wrap: break-word;
   word-break: normal;
+  margin: 0% 1% 2% 0;
 }
 .programa i {
   font-size: 20px;
@@ -136,5 +138,8 @@ export default {
 }
 /deep/ .van-swipe__indicators {
   bottom: 3px !important;
+}
+/deep/ .van-swipe__indicator {
+  background-color: blue;
 }
 </style>

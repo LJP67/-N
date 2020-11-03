@@ -49,7 +49,7 @@
         </li>
         <li>
           <i class="iconfont">&#xe64b;</i>
-          <span>实时公交</span>
+          <span style="margin-left: 17%">实时公交</span>
         </li>
       </ul>
     </div>
@@ -134,7 +134,7 @@ export default {
   height: 14vh;
   position: absolute;
   right: 4%;
-  top: 72%;
+  top: 20%;
 }
 .statusreport ul li {
   align-content: center; /*垂直居中*/
@@ -161,5 +161,6 @@ export default {
   margin-left: 24%;
   margin-top: 5%;
   font-size: 1rem;
+  font-family: cursive;
 }
 </style>

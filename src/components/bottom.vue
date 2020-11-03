@@ -60,7 +60,7 @@ export default {
 #navtab {
   width: 100%;
   position: fixed;
-  bottom: 1%;
+  bottom: 0;
   left: 0;
   z-index: 999; //保证底部在商家列表上层 当点击综合排序时  不会被遮罩挡住
   span {
@@ -74,6 +74,8 @@ export default {
       flex-direction: column;
       align-content: center;
       flex: 1;
+      margin-bottom: 1%;
+      margin-left: 3%;
       line-height: 0.75;
       .index,
       .home,

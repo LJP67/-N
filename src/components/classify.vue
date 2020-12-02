@@ -103,6 +103,7 @@ export default {
 <style  lang="less" scoped>
 .classify {
   background-color: #f3f3f3;
+  display: contents;
 }
 .my-swipe .van-swipe-item {
   font-size: 20px;

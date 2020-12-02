@@ -1,137 +1,17 @@
 <template>
   <div class="tabs1">
     <ul class="listContent">
-      <li class="item">
-        <img src="@/style/img/tiaosan.png" alt="" />
+      <li class="item" v-for="(item, index) in tabsdata" :key="index">
+        <img :src="bindIcon(item.imgsrc)" alt="" />
         <div class="demo1">
           <h4>
-            广州4000米高空跳伞(代金券)广东云海跳伞俱乐部广东云海跳伞俱乐部
+            {{ item.titele }}
           </h4>
-          <h5 class="p1">俯看着人们,如此美好</h5>
-          <p class="p2">已售135 | 13.8km</p>
+          <h5 class="p1">{{ item.evaluate }}</h5>
+          <p class="p2">已售{{ item.sale }} | {{ item.distance }}</p>
           <span class="price1"
-            >¥1688
-            <del class="price2">￥2260</del>
-            <span class="price3"></span>
-          </span>
-        </div>
-      </li>
-
-      <li class="item">
-        <img src="@/style/img/gzt.png" alt="" />
-        <div class="demo1">
-          <h4>广州塔(4A)</h4>
-          <h5 class="p1">需提前网上购票</h5>
-          <p class="p2">
-            <span>4.0分</span>|<span>评价5000+</span>|<span>10.1km</span>
-          </p>
-          <span class="price1"
-            >¥150<del class="price2"></del><span class="price3">起</span>
-          </span>
-        </div>
-      </li>
-      <li class="item">
-        <img src="@/style/img/gzt.png" alt="" />
-        <div class="demo1">
-          <h4>广州塔(4A)</h4>
-          <h5 class="p1">需提前网上购票</h5>
-          <p class="p2">
-            <span>4.0分</span>|<span>评价5000+</span>|<span>10.1km</span>
-          </p>
-          <span class="price1"
-            >¥150<del class="price2"></del><span class="price3">起</span>
-          </span>
-        </div>
-      </li>
-      <li class="item">
-        <img src="@/style/img/gzt.png" alt="" />
-        <div class="demo1">
-          <h4>广州塔(4A)</h4>
-          <h5 class="p1">需提前网上购票</h5>
-          <p class="p2">
-            <span>4.0分</span>|<span>评价5000+</span>|<span>10.1km</span>
-          </p>
-          <span class="price1"
-            >¥150<del class="price2"></del><span class="price3">起</span>
-          </span>
-        </div>
-      </li>
-      <li class="item">
-        <img src="@/style/img/gzt.png" alt="" />
-        <div class="demo1">
-          <h4>广州塔(4A)</h4>
-          <h5 class="p1">需提前网上购票</h5>
-          <p class="p2">
-            <span>4.0分</span>|<span>评价5000+</span>|<span>10.1km</span>
-          </p>
-          <span class="price1"
-            >¥150<del class="price2"></del><span class="price3">起</span>
-          </span>
-        </div>
-      </li>
-      <li class="item">
-        <img src="@/style/img/gzt.png" alt="" />
-        <div class="demo1">
-          <h4>广州塔(4A)</h4>
-          <h5 class="p1">需提前网上购票</h5>
-          <p class="p2">
-            <span>4.0分</span>|<span>评价5000+</span>|<span>10.1km</span>
-          </p>
-          <span class="price1"
-            >¥150<del class="price2"></del><span class="price3">起</span>
-          </span>
-        </div>
-      </li>
-      <li class="item">
-        <img src="@/style/img/gzt.png" alt="" />
-        <div class="demo1">
-          <h4>广州塔(4A)</h4>
-          <h5 class="p1">需提前网上购票</h5>
-          <p class="p2">
-            <span>4.0分</span>|<span>评价5000+</span>|<span>10.1km</span>
-          </p>
-          <span class="price1"
-            >¥150<del class="price2"></del><span class="price3">起</span>
-          </span>
-        </div>
-      </li>
-      <li class="item">
-        <img src="@/style/img/gzt.png" alt="" />
-        <div class="demo1">
-          <h4>广州塔(4A)</h4>
-          <h5 class="p1">需提前网上购票</h5>
-          <p class="p2">
-            <span>4.0分</span>|<span>评价5000+</span>|<span>10.1km</span>
-          </p>
-          <span class="price1"
-            >¥150<del class="price2"></del><span class="price3">起</span>
-          </span>
-        </div>
-      </li>
-      <li class="item">
-        <img src="@/style/img/gzt.png" alt="" />
-        <div class="demo1">
-          <h4>广州塔(4A)</h4>
-          <h5 class="p1">需提前网上购票</h5>
-          <p class="p2">
-            <span>4.0分</span>|<span>评价5000+</span>|<span>10.1km</span>
-          </p>
-          <span class="price1"
-            >¥150<del class="price2"></del><span class="price3">起</span>
-          </span>
-        </div>
-      </li>
-      <li class="item">
-        <img src="@/style/img/tiaosan.png" alt="" />
-        <div class="demo1">
-          <h4>
-            广州4000米高空跳伞(代金券)广东云海跳伞俱乐部广东云海跳伞俱乐部
-          </h4>
-          <h5 class="p1">俯看着人们,如此美好</h5>
-          <p class="p2">已售135 | 13.8km</p>
-          <span class="price1"
-            >¥1688
-            <del class="price2">￥2260</del>
+            >¥{{ item.price1 }}
+            <del class="price2">￥{{ item.price2 }}</del>
             <span class="price3"></span>
           </span>
         </div>
@@ -142,10 +22,24 @@
 
 <script>
 import "@/style/tabs0.css";
-
+import falls from "@/json/falls.json";
 export default {
   data() {
-    return {};
+    return {
+      tabsdata: falls,
+    };
+  },
+  methods: {
+    // 处理图片路径的函数
+    bindIcon(imgsrc) {
+      return require("@/style/img/" + imgsrc);
+    },
+  },
+  mounted() {
+    // console.log(falls);
+    // falls.forEach((element) => {
+    //   console.log(element.imgsrc);
+    // });
   },
 };
 </script>

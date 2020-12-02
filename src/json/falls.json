@@ -1,132 +1,200 @@
 [
-    [
-        {
-            "imgsrc": "@/style/img/cl.png",
-            "titele": "广州长隆欢乐世界",
-            "evaluate": "入选广州必玩榜",
-            "distance": "20.8km",
-            "price": "129"
-        },
-        {
-            "imgsrc": "@/style/img/putao.png",
-            "titele": "新疆红提500g",
-            "evaluate": "应季好货 鲜红可口 甜蜜多汁",
-            "distance": "6km",
-            "price": "119"
-        },
-        {
-            "imgsrc": "@/style/img/lbjn.png",
-            "titele": "兰博基尼LP700-4 Roadster WAGONS....",
-            "evaluate": "动力强劲的跑车",
-            "distance": "1km",
-            "price": "2449"
-        },
-        {
-            "imgsrc": "@/style/img/chaofan.png",
-            "titele": "猛男炒饭",
-            "evaluate": "点了两份炒饭,都很不错",
-            "distance": "10.1km",
-            "price": "1229"
-        },
-        {
-            "imgsrc": "@/style/img/spa.png",
-            "titele": "心娱SPA馆",
-            "evaluate": "按摩休闲来一炮",
-            "distance": ">5km",
-            "price": "1269"
-        },
-        {
-            "imgsrc": "@/style/img/kaoyu.png",
-            "titele": "有家烤鱼●鸡煲饭",
-            "evaluate": "很喜欢烤鱼的味道",
-            "distance": "8.3km",
-            "price": "1729"
-        },
-        {
-            "imgsrc": "@/style/img/jiudian.png",
-            "titele": "蜜语情侣主题酒店",
-            "evaluate": "舒适型 | '服务员态度好'",
-            "distance": "9.5km",
-            "price": "1429"
-        },
-        {
-            "imgsrc": "@/style/img/msld.png",
-            "titele": "粤A玛莎拉蒂敞篷GT自驾租售 ONE TWO超跑俱乐部",
-            "evaluate": "",
-            "distance": "12.1km",
-            "price": "3129"
-        },
-        {
-            "imgsrc": "@/style/img/yuncheng.png",
-            "titele": "云城荟晨公寓",
-            "evaluate": "经济 | '设备齐全内饰漂亮'",
-            "distance": "<500m",
-            "price": "9129"
-        }
-    ],
-    [
-        {
-            "imgsrc": "@/style/img/hdl.png",
-            "titele": "海底捞",
-            "evaluate": "环境不错,服务热情",
-            "distance": "5.4km",
-            "price": "129"
-        },
-        {
-            "imgsrc": "@/style/img/V+.png",
-            "titele": "V+电影公馆",
-            "evaluate": "双人约会,这里都有",
-            "distance": "8.5km",
-            "price": "119"
-        },
-        {
-            "imgsrc": "@/style/img/anmo.png",
-            "titele": "梦呓SPA男子保健按摩",
-            "evaluate": "多种类型商房",
-            "distance": "11km",
-            "price": "2449"
-        },
-        {
-            "imgsrc": "@/style/img/TSD.png",
-            "titele": "TSD情绪发泄屋",
-            "evaluate": "车陂东圃",
-            "distance": "15.1km",
-            "price": "1229"
-        },
-        {
-            "imgsrc": "@/style/img/gzt.png",
-            "titele": "广州塔",
-            "evaluate": "需提前网上购票",
-            "distance": "10.1km",
-            "price": "1269"
-        },
-        {
-            "imgsrc": "@/style/img/mengyang.png",
-            "titele": "蒙香烤全羊",
-            "evaluate": "美味烧烤 怎么能少的了爽字了得",
-            "distance": "test",
-            "price": "1729"
-        },
-        {
-            "imgsrc": "@/style/img/julangjiuba.png",
-            "titele": "巨浪酒吧J·PARTY",
-            "evaluate": "我们何乐而不为",
-            "distance": "6.3km",
-            "price": "1429"
-        },
-        {
-            "imgsrc": "@/style/img/tiaosan.png",
-            "titele": "广东4千米高空跳伞(云海俱乐部)",
-            "evaluate": "俯看着人们,如此美好",
-            "distance": "13.8km",
-            "price": "3129"
-        },
-        {
-            "imgsrc": "@/style/img/tang.png",
-            "titele": "汤小鲜肥牛汤饭",
-            "evaluate": "菜品新鲜 健康美味",
-            "distance": "4.3km",
-            "price": "9129"
-        }
-    ]
+    {
+        "imgsrc": "cl.png",
+        "titele": "广州长隆欢乐世界",
+        "evaluate": "入选广州必玩榜",
+        "sale": "125",
+        "distance": "20.8km",
+        "price1": "129",
+        "price2": "189",
+        "price3": "",
+        "score": "评价3100"
+    },
+    {
+        "imgsrc": "putao.png",
+        "titele": "新疆红提500g",
+        "evaluate": "应季好货 鲜红可口 甜蜜多汁",
+        "sale": "165",
+        "distance": "6km",
+        "price1": "59",
+        "price2": "89",
+        "price3": "",
+        "score": "评价2670"
+    },
+    {
+        "imgsrc": "lbjn.png",
+        "titele": "兰博基尼LP700-4 Roadster WAGONS....",
+        "evaluate": "动力强劲的跑车",
+        "sale": "15",
+        "distance": "1km",
+        "price1": "50000000",
+        "price2": "65555555",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "chaofan.png",
+        "titele": "猛男炒饭",
+        "evaluate": "点了两份炒饭,都很不错",
+        "sale": "725",
+        "distance": "10.1km",
+        "price1": "18",
+        "price2": "22",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "spa.png",
+        "titele": "心娱SPA馆",
+        "evaluate": "按摩休闲来一炮",
+        "sale": "225",
+        "distance": ">5km",
+        "price1": "399",
+        "price2": "599",
+        "price3": "",
+        "score": "评价2121"
+    },
+    {
+        "imgsrc": "kaoyu.png",
+        "titele": "有家烤鱼●鸡煲饭",
+        "evaluate": "很喜欢烤鱼的味道",
+        "sale": "325",
+        "distance": "8.3km",
+        "price1": "24",
+        "price2": "38",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "jiudian.png",
+        "titele": "蜜语情侣主题酒店",
+        "evaluate": "舒适型 | '服务员态度好'",
+        "sale": "155",
+        "distance": "9.5km",
+        "price1": "235",
+        "price2": "400",
+        "price3": "",
+        "score": "评价782"
+    },
+    {
+        "imgsrc": "msld.png",
+        "titele": "粤A玛莎拉蒂敞篷GT自驾租售 ONE TWO超跑俱乐部",
+        "sale": "195",
+        "evaluate": "",
+        "distance": "12.1km",
+        "price1": "1999",
+        "price2": "3600",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "yuncheng.png",
+        "titele": "云城荟晨公寓",
+        "evaluate": "经济 | '设备齐全内饰漂亮'",
+        "sale": "785",
+        "distance": "<500m",
+        "price1": "1500",
+        "price2": "2222",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "hdl.png",
+        "titele": "海底捞",
+        "evaluate": "环境不错,服务热情",
+        "sale": "325",
+        "distance": "5.4km",
+        "price1": "150",
+        "price2": "180",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "V+.png",
+        "titele": "V+电影公馆",
+        "evaluate": "双人约会,这里都有",
+        "sale": "222",
+        "distance": "8.5km",
+        "price1": "239",
+        "price2": "367",
+        "price3": "",
+        "score": "评价1233"
+    },
+    {
+        "imgsrc": "anmo.png",
+        "titele": "梦呓SPA男子保健按摩",
+        "evaluate": "多种类型商房",
+        "sale": "672",
+        "distance": "11km",
+        "price1": "135",
+        "price2": "200",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "TSD.png",
+        "titele": "TSD情绪发泄屋",
+        "evaluate": "车陂东圃",
+        "sale": "281",
+        "distance": "15.1km",
+        "price1": "99",
+        "price2": "170",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "gzt.png",
+        "titele": "广州塔",
+        "evaluate": "需提前网上购票",
+        "sale": "901",
+        "distance": "10.1km",
+        "price1": "89",
+        "price2": "199",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "mengyang.png",
+        "titele": "蒙香烤全羊",
+        "evaluate": "美味烧烤 怎么能少的了爽字了得",
+        "sale": "910",
+        "distance": "test",
+        "price1": "213",
+        "price2": "289",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "julangjiuba.png",
+        "titele": "巨浪酒吧J·PARTY",
+        "evaluate": "我们何乐而不为",
+        "sale": "12",
+        "distance": "6.3km",
+        "price1": "300",
+        "price2": "600",
+        "price3": "",
+        "score": "评价562"
+    },
+    {
+        "imgsrc": "tiaosan.png",
+        "titele": "广东4千米高空跳伞(云海俱乐部)",
+        "evaluate": "俯看着人们,如此美好",
+        "sale": "455",
+        "distance": "13.8km",
+        "price1": "2000",
+        "price2": "4000",
+        "price3": "",
+        "score": ""
+    },
+    {
+        "imgsrc": "tang.png",
+        "titele": "汤小鲜肥牛汤饭",
+        "evaluate": "菜品新鲜 健康美味",
+        "sale": "785",
+        "distance": "4.3km",
+        "price1": "17",
+        "price2": "27",
+        "price3": "",
+        "score": ""
+    }
 ]

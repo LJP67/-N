@@ -35,7 +35,7 @@
         :plain="true"
         class="submit"
         @click="handleRegSubmit"
-        style="width: 20%; margin: 3% 6% 0 20%"
+        style="width: 20%; margin: 3% 6% 0 9%"
         >确认</el-button
       >
       <el-button type="primary" @click="backtrackA">返回</el-button>
@@ -152,5 +152,11 @@ export default {
 .submit {
   width: 100%;
   margin-top: 10px;
+}
+.form-item[data-v-34ea2d98] {
+  width: 60%;
+}
+/deep/ [data-v-34ea2d98] .el-input__inner {
+  width: 100%;
 }
 </style>

@@ -38,7 +38,7 @@
         class="submit"
         type="primary"
         @click="handleRegSubmit"
-        style="width: 20%; margin: 3% 6% 0 20%"
+        style="width: 28%; margin: 3% 6% 0 16%"
         >注册</el-button
       >
       <el-button type="primary" :plain="true" @click="backtrackB"
@@ -138,7 +138,7 @@ export default {
 
 <style  lang="less" scoped>
 .register {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 /deep/ .el-input__inner {
@@ -159,5 +159,12 @@ export default {
 .submit {
   width: 100%;
   margin-top: 10px;
+}
+.form-item[data-v-8f8a1d9a] {
+  width: 80%;
+  margin: 4% auto;
+}
+/deep/ [data-v-8f8a1d9a] .el-input__inner {
+  width: 100%;
 }
 </style>

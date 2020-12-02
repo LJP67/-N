@@ -1,9 +1,9 @@
 <template>
   <div
     class="rou"
-    style="margin: 80px auto; width: 25%; border: 1px solid #cccc"
+    style="margin: 80px auto; width: 90%; border: 1px solid #cccc"
   >
-    <h1 style="display: initial; margin-left: 34%">美团登录</h1>
+    <h1 style="margin: 0 auto; width: 45%">美团登录</h1>
     <el-form :model="loginForm" ref="form" :rules="rules" class="form">
       <el-form-item class="form-item" prop="username">
         <el-input
@@ -29,7 +29,12 @@
         </span>
       </p>
 
-      <el-button class="submit" type="primary" @click="handleLoginSubmit"
+      <el-button
+        class="submit"
+        type="primary"
+        @click="handleLoginSubmit"
+        size="mini"
+        style="width: 28%; margin: 0 auto; displiay: block"
         >登录</el-button
       >
     </el-form>
@@ -42,8 +47,8 @@ export default {
     return {
       // 表单数据
       loginForm: {
-        username: "",
-        password: "",
+        username: "美团",
+        password: "111111",
       },
       // 表单规则
       rules: {
@@ -97,5 +102,9 @@ export default {
 .submit {
   width: 100%;
   margin-top: 10px;
+  display: block;
+}
+.el-input {
+  width: 100%;
 }
 </style>

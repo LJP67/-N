@@ -7,7 +7,7 @@ import VueRouter from "vue-router";
 // use 路由管理
 Vue.use(VueRouter);
 // 创建路由对象 实现映射
-export default new VueRouter({
+const router = new VueRouter({
   // 添加路由配置 实现路由配置
   routes: [
     // 启动路由
@@ -96,3 +96,12 @@ export default new VueRouter({
     }
   ]
 });
+router.beforeEach((to, from, next) => {
+  if (!localStorage.getItem("loginUser")) {
+    if (to.path !== "/login") {
+      next("/login");
+    }
+  }
+  next();
+});
+export default router;

@@ -1,0 +1,33 @@
+[
+    {
+        "city": "中国香港",
+        "introduce": "美食购物的天堂",
+        "images": "xianggang.jpg"
+    },
+    {
+        "city": "中国澳门",
+        "introduce": "国际烟花汇演",
+        "images": "aomen.jpg"
+    },
+    {
+        "city": "中国台北",
+        "introduce": "(中国台湾)",
+        "images": "taibei.jpg"
+    },
+    {
+        "city": "新加坡",
+        "introduce": "游环影城圣淘沙",
+        "images": "xinjiapo.jpg"
+    },
+    {
+        "city": "东京",
+        "introduce": "游迪士尼海洋公园",
+        "images": "dongjing.jpg"
+    },
+    {
+        "city": "曼谷",
+        "introduce": "千佛寺人妖风采",
+        "images": "mangu.jpg"
+    }
+   
+]

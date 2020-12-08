@@ -116,9 +116,11 @@ export default {
   padding-bottom: 1%;
 }
 .headB {
-  margin-left: -10%;
+  margin-left: -13%;
 }
-
+.headerC {
+  margin-right: 2%;
+}
 /deep/ .newfo {
   width: 59vw !important;
   height: 4vh !important;
@@ -135,6 +137,7 @@ export default {
   position: absolute;
   right: 4%;
   top: 20%;
+  z-index: 9999999;
 }
 .statusreport ul li {
   align-content: center; /*垂直居中*/

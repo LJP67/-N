@@ -1,9 +1,11 @@
 <template>
   <div class="location">
     <div class="lthead">
-      <span style="font-size: 3em; display: inline-block" @click="getback"
-        >＜</span
-      >
+      <i
+        class="el-icon-arrow-left"
+        style="font-size: 1.6rem; height: 30px; line-height: 30px"
+        @click="getback()"
+      ></i>
       <el-input
         placeholder="城市/拼音"
         prefix-icon="el-icon-search"
@@ -25,12 +27,16 @@
     <div v-show="Current === 0">
       <Choosecounty />
     </div>
-    <div v-show="Current === 1">2</div>
+    <div v-show="Current === 1">
+      <International />
+    </div>
   </div>
 </template>
 
 <script>
 import Choosecounty from "@/view/location/choosecounty.vue";
+import International from "@/view/location/international.vue";
+
 export default {
   data() {
     return {
@@ -40,6 +46,7 @@ export default {
   },
   components: {
     Choosecounty,
+    International,
   },
   methods: {
     ltclick(index) {
@@ -55,10 +62,15 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.location {
+  overflow: hidden;
+}
 .lthead {
   width: 100%;
   height: 100%;
   background-color: #fccc00;
+  display: flex;
+  padding: 1%;
 }
 /deep/.el-input--mini .el-input__inner {
   height: 28px;
@@ -77,5 +89,10 @@ export default {
 .lttabs span {
   flex: 1;
   font-size: 1rem;
+}
+.active {
+  padding: 1%;
+  width: 5%;
+  border-bottom: 2px solid #fccc00;
 }
 </style>

@@ -1,0 +1,22 @@
+[
+    {
+        "city": "中国香港",
+        "introduce": "美食购物的天堂",
+        "images": "xianggang.jpg"
+    },
+    {
+        "city": "中国澳门",
+        "introduce": "国际烟花汇演",
+        "images": "aomen.jpg"
+    },
+    {
+        "city": "中国台北",
+        "introduce": "(中国台湾)",
+        "images": "taibei.jpg"
+    },
+    {
+        "city": "中国高雄",
+        "introduce": "(中国台湾)",
+        "images": "gaoxiong.jpeg"
+    }
+]

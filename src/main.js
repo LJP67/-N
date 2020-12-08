@@ -11,6 +11,7 @@ import { Cell, CellGroup } from "vant";
 import { Search } from "vant";
 import { Toast } from "vant";
 import { Swipe, SwipeItem } from "vant";
+import { Sidebar, SidebarItem } from "vant";
 
 Vue.config.productionTip = false;
 // 使用组件
@@ -22,6 +23,8 @@ Vue.use(Search);
 Vue.use(Toast);
 Vue.use(Swipe);
 Vue.use(SwipeItem);
+Vue.use(Sidebar);
+Vue.use(SidebarItem);
 
 Vue.use(ElementUI);
 // 引入路由模块

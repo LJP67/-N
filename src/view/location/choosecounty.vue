@@ -196,4 +196,7 @@ export default {
   text-align: center;
   background-color: #fff;
 }
+/deep/.van-index-bar__sidebar {
+  right: 2%;
+}
 </style>

@@ -64,7 +64,7 @@ export default {
   left: 0;
   z-index: 999; //保证底部在商家列表上层 当点击综合排序时  不会被遮罩挡住
   span {
-    font-size: 0.3rem;
+    font-size: 0.7rem;
   }
   ul {
     display: flex;
@@ -83,12 +83,12 @@ export default {
         @include px2rem(width, 60);
         margin: 0.1rem auto;
         img {
-          width: 70%;
+          width: 50%;
         }
       }
       span {
-        font-size: 0.2rem;
-        margin-left: 28%;
+        font-size: 0.7rem;
+        margin-left: 20%;
         margin-top: 4%;
         align-content: center;
       }

@@ -73,10 +73,13 @@ export default {
     // 提交登录
     handleLoginSubmit() {
       this.$refs.form.validate((valid) => {
-        console.log(this.loginForm);
         if (valid) {
-          console.log("success submit!!");
+          localStorage.setItem("loginUser", JSON.stringify(this.loginForm));
           this.$router.push({ name: "Index" });
+
+          console.log("success submit!!");
+          console.log(valid);
+          console.log(this.loginForm);
         } else {
           console.log("error submit!!");
         }

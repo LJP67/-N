@@ -104,6 +104,7 @@ export default {
 .classify {
   background-color: #f3f3f3;
   display: contents;
+  z-index: 999;
 }
 .my-swipe .van-swipe-item {
   font-size: 20px;
@@ -133,7 +134,7 @@ export default {
   display: block;
 }
 .programa li span {
-  font-size: 0.2rem;
+  font-size: 0.8rem;
   align-content: center;
   font-family: serif;
 }

@@ -93,6 +93,11 @@ const router = new VueRouter({
       name: "tabs2",
       path: "/tabs2",
       component: () => import("@/view/findtabs/tabs2.vue")
+    },
+    {
+      name: "vuex",
+      path: "/vuex",
+      component: () => import("@/components/vuex.vue")
     }
   ]
 });

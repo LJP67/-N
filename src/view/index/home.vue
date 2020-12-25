@@ -1,12 +1,13 @@
 <template>
   <div class="home">
-    我的
+    <Myhead />
     <Bottom />
   </div>
 </template>
 
 <script>
 import Bottom from "@/components/bottom.vue";
+import Myhead from "@/view/column/myhead.vue";
 
 export default {
   data() {
@@ -14,6 +15,7 @@ export default {
   },
   components: {
     Bottom,
+    Myhead,
   },
 };
 </script>

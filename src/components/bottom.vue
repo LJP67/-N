@@ -15,7 +15,7 @@
             <img src="@/images/tu1.jpg" v-if="active === 'order'" />
             <img src="@/images/tu2.jpg" v-else />
           </div>
-          <span>发现</span>
+          <span style="margin-left: 26%">发现</span>
         </router-link>
 
         <router-link to="/information" tag="li">
@@ -88,7 +88,7 @@ export default {
       }
       span {
         font-size: 0.7rem;
-        margin-left: 20%;
+        margin-left: 23%;
         margin-top: 4%;
         align-content: center;
       }

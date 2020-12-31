@@ -6,6 +6,8 @@
     <Bottom />
   </div>
 </template>
+
+
 <script>
 import Orderpage from "@/components/orderpage.vue";
 import Bottom from "@/components/bottom.vue";
